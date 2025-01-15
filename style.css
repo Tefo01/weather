@@ -40,6 +40,7 @@ body{
             margin-top: 20px;
             width: 100px;
             font-size: 15px;
+            
     }
     button:hover {
         background: #4865d7;
@@ -48,13 +49,38 @@ body{
         font-size: 60px;
         margin-top: -30px;
         }
-        #weather-info {
+    #weather-info {
             font-size: 20px;
             }
-            #weather-icon {
+    #weather-icon {
             width: 200px;
             height: 200px;
             margin: 0 auto 10px;
             margin-bottom: 0;
             display: none;
+        }
+    #hourly-forecast {
+                margin-top: 50px;
+                overflow-x: auto;
+                white-space: nowrap;
+                display: flex;
+                justify-content: space-between;
+        }
+    .hourly-item {
+                flex: 0 auto;
+                width: 80px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 10px;
+                color: white;
+        }
+    .hourly-item img {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 5px;
+            }
+            #hourly-heading {
+            color: #fff;
+            margin-top: 10px;
             }
